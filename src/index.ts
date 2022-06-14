@@ -7,6 +7,8 @@ import routes from "./routes";
 
 AppDataSource.initialize()
   .then(async () => {
+    // cors with cors config should be added.
+
     const app = express();
     app.use(bodyParser.json());
     app.use(cookieParser());
